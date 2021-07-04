@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="fetAllBooks()">Get All books </button>
+</body>
+<script>
+  function fetAllBooks(){
+    fetch("http://127.0.0.1:8000/api/v1/books").then(res=>res.json()).then(data=>console.log(data))
+
+  }
+</script>
+</html>
